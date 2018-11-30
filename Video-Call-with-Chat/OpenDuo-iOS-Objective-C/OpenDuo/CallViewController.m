@@ -172,17 +172,10 @@
             [weakSelf stopRing];
             [weakSelf leaveChannel];
             
-            NSData *data = [extra dataUsingEncoding:NSUTF8StringEncoding];
-            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-            if ([dic[@"status"] intValue] == 1) {
-                NSString *message = [NSString stringWithFormat:@"%@ is busy", account];
-                [AlertUtil showAlert:message completion:^{
-                    [weakSelf dismissViewControllerAnimated:NO completion:nil];
-                }];
-            }
-            else {
+            NSString *message = [NSString stringWithFormat:@"%@ is busy", account];
+            [AlertUtil showAlert:message completion:^{
                 [weakSelf dismissViewControllerAnimated:NO completion:nil];
-            }
+            }];
         });
     };
     

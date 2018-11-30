@@ -73,7 +73,7 @@
     if (account.length > 0) {
         [self.accountTextField resignFirstResponder];
         
-        NSString *sigToken = @"_no_need_token";
+        NSString *sigToken = @"";
         [signalEngine login:[KeyCenter appId] account:account token:sigToken uid:0 deviceID:nil];
     }
 }
