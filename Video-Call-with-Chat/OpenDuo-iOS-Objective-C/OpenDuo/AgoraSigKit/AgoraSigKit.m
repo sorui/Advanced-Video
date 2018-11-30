@@ -51,8 +51,10 @@ NSString *SIG_CHANNEL_INVITE_USER2 = @"SIG_CHANNEL_INVITE_USER2";
 
 - (void)queryUserStatus:(NSString *)account {
     AgoraRtmMessage *message = [[AgoraRtmMessage alloc] initWithText:SIG_QUERY_USER_STATUS];
+    NSLog(@"==2 queryUserStatus: %@", account);
     __weak typeof(self) weakSelf = self;
     [self.rtmKit sendMessage:message toPeer:account completion:^(AgoraRtmSendPeerMessageState state) {
+        NSLog(@"==2 userStatus: %@, state: %d", account, state);
         NSString* status = (state == AgoraRtmSendPeerMessageStateReceivedByPeer ? @"1" : @"0");
         if (weakSelf.onQueryUserStatusResult) {
             weakSelf.onQueryUserStatusResult(account, status);
