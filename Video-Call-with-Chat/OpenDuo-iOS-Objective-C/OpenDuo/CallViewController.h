@@ -10,7 +10,7 @@
 
 @interface CallViewController : UIViewController
 
-@property (assign, nonatomic) unsigned localUID;
+@property (assign, nonatomic) NSInteger localUID;
 @property (copy, nonatomic) NSString *localAccount;
 @property (copy, nonatomic) NSString *remoteAccount;
 @property (copy, nonatomic) NSString *channel;

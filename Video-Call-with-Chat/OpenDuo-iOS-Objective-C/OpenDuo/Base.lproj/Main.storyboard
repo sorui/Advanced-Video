@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TDH-sS-Reh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TDH-sS-Reh">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -99,7 +98,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your account ID is " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19Q-eA-cyt">
-                                        <rect key="frame" x="135.66666666666669" y="57.333333333333329" width="142.66666666666669" height="21"/>
+                                        <rect key="frame" x="135.66666666666669" y="57.333333333333321" width="142.66666666666669" height="20.666666666666664"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20.5" id="fZl-84-cJU"/>
                                         </constraints>
@@ -108,7 +107,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxz-JY-zBX">
-                                        <rect key="frame" x="15" y="135.33333333333334" width="384" height="21"/>
+                                        <rect key="frame" x="15" y="135.33333333333334" width="384" height="20.333333333333343"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20.5" id="cCZ-tr-KF2"/>
                                         </constraints>
@@ -117,7 +116,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CDD-vI-BWS">
-                                        <rect key="frame" x="93" y="213.66666666666669" width="228" height="284"/>
+                                        <rect key="frame" x="93" y="213.33333333333331" width="228" height="284"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pqK-w2-oCK">
                                                 <rect key="frame" x="0.0" y="0.0" width="228" height="56"/>
@@ -533,7 +532,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24v-9g-C2M" userLabel="muteButton">
-                                <rect key="frame" x="30.666666666666671" y="541.33333333333337" width="35" height="51"/>
+                                <rect key="frame" x="30" y="541.33333333333337" width="35" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="aF8-gf-a9m"/>
                                     <constraint firstAttribute="width" constant="35" id="sBk-rX-Jk8"/>
@@ -556,7 +555,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9dV-9b-PzW">
-                                <rect key="frame" x="65.666666666666657" y="602.33333333333337" width="273.33333333333337" height="60"/>
+                                <rect key="frame" x="65" y="602.33333333333337" width="274" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6Z-lm-TMj">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -570,7 +569,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fne-NZ-3Ww">
-                                        <rect key="frame" x="213.33333333333331" y="0.0" width="60" height="60"/>
+                                        <rect key="frame" x="214" y="0.0" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="0Og-GP-eJ7"/>
                                             <constraint firstAttribute="width" constant="60" id="izb-lY-4YI"/>
@@ -630,7 +629,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="20" height="20"/>
+        <image name="back" width="60" height="60"/>
         <image name="background" width="1125" height="2001"/>
         <image name="call" width="188" height="188"/>
         <image name="camera" width="136" height="96"/>

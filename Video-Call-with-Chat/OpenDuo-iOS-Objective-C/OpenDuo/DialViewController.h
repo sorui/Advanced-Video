@@ -10,7 +10,7 @@
 
 @interface DialViewController : UIViewController
 
-@property (assign, nonatomic) unsigned localUID;
+@property (assign, nonatomic) NSInteger localUID;
 @property (copy, nonatomic) NSString *localAccount;
 
 @end

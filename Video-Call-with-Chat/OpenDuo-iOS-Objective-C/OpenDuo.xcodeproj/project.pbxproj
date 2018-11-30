@@ -398,7 +398,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 48TB6ZZL5S;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenDuo",
@@ -426,7 +426,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 48TB6ZZL5S;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenDuo",
@@ -442,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.agora.OpenDuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "dc253ab3-71e4-40a3-a57c-a3a763407202";
-				PROVISIONING_PROFILE_SPECIFIER = AgoraIODev2017;
+				PROVISIONING_PROFILE_SPECIFIER = AgoraIODev2018;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

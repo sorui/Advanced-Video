@@ -63,7 +63,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"ShowDialView"]) {
         DialViewController *dialVC = segue.destinationViewController;
-        dialVC.localUID = [sender unsignedIntValue];
+        NSString *account = sender;
+        dialVC.localUID = [account integerValue];
         dialVC.localAccount = self.accountTextField.text;
     }
 }
