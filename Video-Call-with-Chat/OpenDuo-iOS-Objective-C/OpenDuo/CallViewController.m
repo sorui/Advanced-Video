@@ -9,7 +9,7 @@
 #import "CallViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AgoraRtcEngineKit/AgoraRtcEngineKit.h>
-#import <AgoraSigKit/AgoraSigKit.h>
+#import "AgoraSigKit.h"
 #import "KeyCenter.h"
 #import "AlertUtil.h"
 #import "NSObject+JSONString.h"
@@ -93,7 +93,7 @@
     
     __weak typeof(self) weakSelf = self;
     
-    signalEngine.onError = ^(NSString* name, AgoraEcode ecode, NSString* desc) {
+    signalEngine.onError = ^(NSString* name, NSInteger ecode, NSString* desc) {
         NSLog(@"onError, name: %@, code:%lu, desc: %@", name, (unsigned long)ecode, desc);
         if ([name isEqualToString:@"query_user_status"]) {
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -132,7 +132,7 @@
         });
     };
     
-    signalEngine.onInviteFailed = ^(NSString* channelID, NSString* account, uint32_t uid, AgoraEcode ecode, NSString *extra) {
+    signalEngine.onInviteFailed = ^(NSString* channelID, NSString* account, uint32_t uid, NSInteger ecode, NSString *extra) {
         NSLog(@"Call %@ failed, ecode: %lu", account, (unsigned long)ecode);
         if (![channelID isEqualToString:weakSelf.channel] || ![account isEqualToString:weakSelf.remoteAccount]) {
             return;
@@ -318,7 +318,7 @@
 - (void)joinChannel {
     NSString *mediaToken = nil;
     int result = [mediaEngine joinChannelByToken:mediaToken channelId:self.channel info:nil uid:self.localUID joinSuccess:nil];
-    if (result != AgoraEcode_SUCCESS) {
+    if (result != 0) {
         NSLog(@"Join channel failed: %d", result);
         
         [signalEngine channelInviteEnd:self.channel account:self.remoteAccount uid:0];

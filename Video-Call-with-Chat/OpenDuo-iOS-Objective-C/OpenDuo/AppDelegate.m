@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "KeyCenter.h"
-#import <AgoraSigKit/AgoraSigKit.h>
+#import "AgoraSigKit.h"
 
 @interface AppDelegate ()
 
@@ -19,10 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    AgoraAPI *signalEngine = [AgoraAPI getInstanceWithoutMedia:[KeyCenter appId]];
-    signalEngine.onLog = ^(NSString *txt){
-        NSLog(@"%@", txt);
-    };
+//    AgoraAPI *signalEngine = [AgoraAPI getInstanceWithoutMedia:[KeyCenter appId]];
+//    signalEngine.onLog = ^(NSString *txt){
+//        NSLog(@"%@", txt);
+//    };
     return YES;
 }
 

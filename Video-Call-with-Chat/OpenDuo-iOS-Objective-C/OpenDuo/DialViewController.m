@@ -11,7 +11,7 @@
 #import "AlertUtil.h"
 #import "NSObject+JSONString.h"
 #import "KeyCenter.h"
-#import <AgoraSigKit/AgoraSigKit.h>
+#import "AgoraSigKit.h"
 
 @interface DialViewController ()
 {
@@ -49,7 +49,7 @@
     
     __weak typeof(self) weakSelf = self;
     
-    signalEngine.onLogout = ^(AgoraEcode ecode) {
+    signalEngine.onLogout = ^(NSInteger ecode) {
         NSLog(@"onLogout, ecode: %lu", (unsigned long)ecode);
         dispatch_async(dispatch_get_main_queue(), ^{
             UIViewController *presentedVC = weakSelf.presentedViewController;

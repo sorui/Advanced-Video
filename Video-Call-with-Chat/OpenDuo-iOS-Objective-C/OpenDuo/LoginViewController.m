@@ -10,7 +10,7 @@
 #import "DialViewController.h"
 #import "AlertUtil.h"
 #import "KeyCenter.h"
-#import <AgoraSigKit/AgoraSigKit.h>
+#import "AgoraSigKit.h"
 
 @interface LoginViewController ()
 {
@@ -39,14 +39,14 @@
     
     __weak typeof(self) weakSelf = self;
     
-    signalEngine.onLoginSuccess = ^(uint32_t uid, int fd) {
-        NSLog(@"Login successfully, uid: %u", uid);
+    signalEngine.onLoginSuccess = ^(NSString *account) {
+        NSLog(@"Login successfully, uid: %@", account);
         dispatch_async(dispatch_get_main_queue(), ^{
-            [weakSelf performSegueWithIdentifier:@"ShowDialView" sender:@(uid)];
+            [weakSelf performSegueWithIdentifier:@"ShowDialView" sender:account];
         });
     };
     
-    signalEngine.onLoginFailed = ^(AgoraEcode ecode) {
+    signalEngine.onLoginFailed = ^(AgoraRtmLoginErrorCode ecode) {
         NSLog(@"Login failed, error: %lu", (unsigned long)ecode);
         dispatch_async(dispatch_get_main_queue(), ^{
             [AlertUtil showAlert:@"Login failed"];

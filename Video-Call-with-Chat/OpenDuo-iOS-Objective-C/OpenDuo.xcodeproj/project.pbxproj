@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38F3C71221AFD8A000504A04 /* AgoraSigKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F3C71121AFD8A000504A04 /* AgoraSigKit.m */; };
 		702F6E451FAAC701009413E4 /* NSObject+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 702F6E441FAAC701009413E4 /* NSObject+JSONString.m */; };
 		702F6E551FAB3F52009413E4 /* ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 702F6E531FAB3F51009413E4 /* ring.mp3 */; };
 		702F6E561FAB3F52009413E4 /* tones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 702F6E541FAB3F51009413E4 /* tones.mp3 */; };
 		7035E92E1FF3C43A00944D2D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7035E92D1FF3C43A00944D2D /* SystemConfiguration.framework */; };
 		705AF7D61FAC8B57002434E7 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705AF7D41FAC8B57002434E7 /* AgoraRtcEngineKit.framework */; };
 		705AF7DC1FAC8C8D002434E7 /* KeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 705AF7DA1FAC8C8D002434E7 /* KeyCenter.m */; };
-		70D37E34200BA73A0034E06F /* AgoraSigKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D37E33200BA73A0034E06F /* AgoraSigKit.framework */; };
 		70D88DE72140D83E00FAB445 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D88DE62140D83E00FAB445 /* Accelerate.framework */; };
 		70DA28421FA8455D00A56C64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DA28411FA8455D00A56C64 /* AppDelegate.m */; };
 		70DA28451FA8455D00A56C64 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DA28441FA8455D00A56C64 /* LoginViewController.m */; };
@@ -33,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38F3C71021AFD88900504A04 /* AgoraSigKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraSigKit.h; sourceTree = "<group>"; };
+		38F3C71121AFD8A000504A04 /* AgoraSigKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgoraSigKit.m; sourceTree = "<group>"; };
 		702F6E431FAAC701009413E4 /* NSObject+JSONString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONString.h"; sourceTree = "<group>"; };
 		702F6E441FAAC701009413E4 /* NSObject+JSONString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONString.m"; sourceTree = "<group>"; };
 		702F6E531FAB3F51009413E4 /* ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ring.mp3; sourceTree = "<group>"; };
@@ -41,7 +43,6 @@
 		705AF7D41FAC8B57002434E7 /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcEngineKit.framework; path = OpenDuo/AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
 		705AF7D91FAC8C8D002434E7 /* KeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCenter.h; sourceTree = "<group>"; };
 		705AF7DA1FAC8C8D002434E7 /* KeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCenter.m; sourceTree = "<group>"; };
-		70D37E33200BA73A0034E06F /* AgoraSigKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraSigKit.framework; path = OpenDuo/AgoraSigKit.framework; sourceTree = "<group>"; };
 		70D88DE62140D83E00FAB445 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		70DA283D1FA8455D00A56C64 /* OpenDuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenDuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DA28401FA8455D00A56C64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D88DE72140D83E00FAB445 /* Accelerate.framework in Frameworks */,
-				70D37E34200BA73A0034E06F /* AgoraSigKit.framework in Frameworks */,
 				7035E92E1FF3C43A00944D2D /* SystemConfiguration.framework in Frameworks */,
 				705AF7D61FAC8B57002434E7 /* AgoraRtcEngineKit.framework in Frameworks */,
 				70DA286B1FA85B8600A56C64 /* CoreTelephony.framework in Frameworks */,
@@ -89,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38F3C70F21AFD88900504A04 /* AgoraSigKit */ = {
+			isa = PBXGroup;
+			children = (
+				38F3C71021AFD88900504A04 /* AgoraSigKit.h */,
+				38F3C71121AFD8A000504A04 /* AgoraSigKit.m */,
+			);
+			path = AgoraSigKit;
+			sourceTree = "<group>";
+		};
 		705AF7D71FAC8C8D002434E7 /* KeyCenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +127,7 @@
 		70DA283F1FA8455D00A56C64 /* OpenDuo */ = {
 			isa = PBXGroup;
 			children = (
+				38F3C70F21AFD88900504A04 /* AgoraSigKit */,
 				705AF7D71FAC8C8D002434E7 /* KeyCenter */,
 				70DA28401FA8455D00A56C64 /* AppDelegate.h */,
 				70DA28411FA8455D00A56C64 /* AppDelegate.m */,
@@ -148,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				70D88DE62140D83E00FAB445 /* Accelerate.framework */,
-				70D37E33200BA73A0034E06F /* AgoraSigKit.framework */,
 				705AF7D41FAC8B57002434E7 /* AgoraRtcEngineKit.framework */,
 				7035E92D1FF3C43A00944D2D /* SystemConfiguration.framework */,
 				70DA286C1FA85BA200A56C64 /* AudioToolbox.framework */,
@@ -242,6 +251,7 @@
 				70E49ED81FA9CD7C0062B0D5 /* AlertUtil.m in Sources */,
 				70DA286F1FA86D4300A56C64 /* DialViewController.m in Sources */,
 				70DA28451FA8455D00A56C64 /* LoginViewController.m in Sources */,
+				38F3C71221AFD8A000504A04 /* AgoraSigKit.m in Sources */,
 				705AF7DC1FAC8C8D002434E7 /* KeyCenter.m in Sources */,
 				70DA28501FA8455D00A56C64 /* main.m in Sources */,
 				702F6E451FAAC701009413E4 /* NSObject+JSONString.m in Sources */,
