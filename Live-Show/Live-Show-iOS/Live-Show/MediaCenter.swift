@@ -54,7 +54,6 @@ class MediaCenter: NSObject {
         let emptyCanvas = AgoraRtcVideoCanvas()
         emptyCanvas.uid = channel.hostUid
         emptyCanvas.view = nil
-        agoraKit.setRemoteRenderMode(channel.hostUid, mode: .fit)
         agoraKit.setupRemoteVideo(emptyCanvas)
         
         self.channel = nil
@@ -76,6 +75,7 @@ extension MediaCenter: AgoraRtcEngineDelegate {
         let canvas = AgoraRtcVideoCanvas()
         canvas.uid = uid
         canvas.view = renderView
+        canvas.renderMode = .hidden
         agoraKit.setupRemoteVideo(canvas)
     }
     
